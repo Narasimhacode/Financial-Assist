@@ -1,0 +1,162 @@
+body {
+    background-image: url('background.jpg'); /* Replace 'background.jpg' with your desired background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 600px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}Here's an updated version of your HTML and CSS with some improvements for better user experience and styling:
+
+HTML (no changes):
+
+<!-- your HTML code remains the same -->
+
+
+CSS (updated):
+
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f0f2f5; /* soft gray background */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  background: #fff; /* white background for container */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 600px;
+}
+
+h1 {
+  color: #007bff; /* blue color for heading */
+}
+
+.expense-categories button,
+#financial-goals button,
+#analyze-btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  color: #fff; /* white text */
+  background: #007bff; /* blue background */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease; /* smooth background transition */
+}
+
+.expense-categories button:hover,
+#financial-goals button:hover,
+#analyze-btn:hover {
+  background: #0069d9; /* darker blue on hover */
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 600px;
+}
+
+/* Additional Styles */
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="number"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+    padding: 1rem;
+  }
+}
+
+
+
+.expense-categories,
+#financial-goals {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.expense-categories button,
+#financial-goals button,
+#analyze-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.expense-categories button:hover,
+#financial-goals button:hover,
+#analyze-btn:hover {
+    background-color: #0056b3;
+}
+
+.modal {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Add more specific styling for inputs, labels, and other elements as needed */

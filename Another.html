@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Budget Planner</title>
+    <link rel="stylesheet" href="Another.css">
+</head>
+<body>
+<div style="text-align: center;">
+    <img src="C:\Users\DELL\OneDrive\Desktop\Html documents\Hackothon.jpg" alt="Budget Planner Logo" style="max-width: 100%; height: auto;">
+</div>
+
+    <div class="container">
+        <h1>My Budget Planner</h1>
+        <p>Welcome! Let's start planning your finances.</p>
+        
+        <label for="income">Enter your Monthly Income:</label>
+        <input type="number" id="income" placeholder="Enter income" required>
+        
+        <div class="expense-categories">
+            <button onclick="openCategory('compulsory')">Compulsory Expenses</button>
+            <button onclick="openCategory('budgetAllotment')">Budget Allotment</button>
+            <button onclick="openCategory('optional')">Optional Expenses</button>
+        </div>
+        
+        <div id="financial-goals">
+            <button onclick="openFinancialGoals()">Financial Goals</button>
+        </div>
+        
+        <button onclick="analyzeBudget()" id="analyze-btn">Analyze Budget</button>
+        
+        <div id="suggestions"></div>
+    </div>
+
+    <!-- Optional Categories Modal -->
+    <div id="optionalModal" class="modal">
+        <h2>Optional Expenses - Preferences</h2>
+        <button onclick="addExpense('mostPreferred')">Most Preferred</button>
+        <button onclick="addExpense('mediumPreferred')">Medium Preferred</button>
+        <button onclick="addExpense('lessPreferred')">Less Preferred</button>
+        <button onclick="saveOptional()">Done</button>
+    </div>
+
+    <script src="Another.js"></script>
+</body>
+</html>
